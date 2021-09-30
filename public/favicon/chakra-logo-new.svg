@@ -92,9 +92,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.8234003"
-     inkscape:cx="74.393804"
-     inkscape:cy="-5.0219241"
+     inkscape:zoom="5.4071046"
+     inkscape:cx="77.500842"
+     inkscape:cy="18.849354"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -108,9 +108,21 @@
      showguides="true"
      inkscape:guide-bbox="true">
     <sodipodi:guide
-       position="26.325703,2.9247224"
+       position="26.203372,5.6404781"
        orientation="0,-1"
-       id="guide2957" />
+       id="guide977" />
+    <sodipodi:guide
+       position="30.754098,1.1876175"
+       orientation="0,-1"
+       id="guide979" />
+    <sodipodi:guide
+       position="32.564601,4.3192997"
+       orientation="0,-1"
+       id="guide981" />
+    <sodipodi:guide
+       position="32.540135,2.0439368"
+       orientation="0,-1"
+       id="guide983" />
   </sodipodi:namedview>
   <metadata
      id="metadata2249">
@@ -120,7 +132,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -141,7 +153,7 @@
          style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:6.35px;font-family:Gilroy;-inkscape-font-specification:'Gilroy Semi-Bold';stroke-width:0.264583">chakra </tspan></text>
     <g
        id="g1495"
-       transform="matrix(0.26458333,0,0,0.26458333,-3.8772676,-7.8314227)">
+       transform="matrix(0.30472946,0,0,0.30472946,-9.5670246,-9.8081605)">
       <rect
          style="opacity:0.999;fill:#0f172a;fill-opacity:0;stroke:#0f172a;stroke-width:1.67458;stroke-miterlimit:4;stroke-dasharray:none"
          id="rect1472"
@@ -165,7 +177,7 @@
     <g
        id="g2228"
        style="display:inline;opacity:0.979525;fill:url(#linearGradient2236);fill-opacity:1"
-       transform="matrix(0.26458333,0,0,0.26458333,-1.7651674,-8.10925)">
+       transform="matrix(0.29523811,0,0,0.29523811,-2.3842255,-9.6957882)">
       <path
          d="m 29.195533,43.595065 c 0,1.739804 -4.700941,3.15002 -10.499934,3.15002 -5.798994,0 -10.5000651,-1.410216 -10.5000651,-3.15002 0,-1.739671 4.7010711,-3.149888 10.5000651,-3.149888 5.798993,0 10.499934,1.410217 10.499934,3.149888 z"
          id="path1552"
@@ -183,5 +195,21 @@
          id="path1558"
          style="display:inline;opacity:0.8;fill:url(#linearGradient2926);fill-opacity:1;stroke-width:1.31993" />
     </g>
+    <rect
+       style="opacity:0.999;fill:#00ffff;stroke:#0f172a;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0"
+       id="rect132"
+       width="1.2944729"
+       height="1.0436094"
+       x="6.2463813"
+       y="2.6531954" />
+    <rect
+       style="opacity:0.999;fill:#00ffff;stroke:#0f172a;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0"
+       id="rect132-3"
+       width="1.2944729"
+       height="1.0436094"
+       x="27.251183"
+       y="2.6531954"
+       inkscape:transform-center-x="-0.015070151"
+       inkscape:transform-center-y="-0.02828346" />
   </g>
 </svg>
