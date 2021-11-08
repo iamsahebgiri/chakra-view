@@ -1,7 +1,7 @@
 import dynamic from 'next/dynamic';
 import { ChakraProvider } from '@chakra-ui/react';
 import customTheme from 'theme';
-import "@fontsource/inter/variable-full.css"
+import "@fontsource/inter/latin.css";
 import '@/styles/index.css';
 
 const NProgress = dynamic(() => import('../components/NProgress'), {

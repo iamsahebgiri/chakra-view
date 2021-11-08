@@ -42,7 +42,6 @@ const ComponentDemo = (props) => {
       >
         <Box
           pos="relative"
-          // overflow="clip"
           roundedTop="lg"
           roundedBottom={!codeEditor.isOpen && 'lg'}
           borderStyle="solid"

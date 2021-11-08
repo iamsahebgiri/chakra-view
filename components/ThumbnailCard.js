@@ -8,7 +8,7 @@ export default function ThumbnailCard() {
         height="44"
         borderTopRadius="md"
         width="full"
-        bgGradient="linear(to-r, purple.300, indigo.500)"
+        bgGradient="linear(to-r, green.400, teal.300)"
       />
       <Box p="4">
         <Text fontWeight="medium">Authentication</Text>

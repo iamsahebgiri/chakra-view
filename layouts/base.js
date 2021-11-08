@@ -15,7 +15,7 @@ export default function BaseLayout(props) {
     ...customMeta,
   };
   return (
-    <Box bgColor="blueGray.50">
+    <Box>
       <Head>
         <title>{`${meta.title} / Chakra View`}</title>
         <meta name="robots" content="follow, index" />

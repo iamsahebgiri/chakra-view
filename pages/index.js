@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <BaseLayout title="Home">
       <Hero />
-      <Box maxW="6xl" mx="auto" px={['4']}>
+      <Box maxW="7xl" mx="auto" px={['4']}>
         <Box borderBottom="1px" mb="12" py="4" borderBottomColor={useColorModeValue("gray.200", "gray.700")}>
           <Heading size="md" mb="2">
             Marketing

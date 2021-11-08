@@ -68,7 +68,7 @@ export default function Header() {
       width="100%"
       zIndex="1"
     >
-      <Container maxW="6xl" py={['2', '3']}>
+      <Container maxW="7xl" py={['2', '3']}>
         <Flex justify="space-between" align="center">
           <IconButton
             onClick={onOpen}
