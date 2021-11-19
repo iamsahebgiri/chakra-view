@@ -14,12 +14,11 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import Link from "next/link";
-import React from "react";
-import {
-  HiOutlineArrowsExpand,
-  HiOutlineEye,
-  HiOutlineCode,
-} from "react-icons/hi";
+import React, { PropsWithChildren } from "react";
+import { BiCode, BiShow } from "react-icons/bi";
+import { HiOutlineArrowsExpand } from "react-icons/hi";
+
+import { ComponentProps } from "types/component";
 
 import CodeBlock from "./CodeBlock";
 import ResizableFrame from "./ResizableFrame";
@@ -27,18 +26,18 @@ import ResizableFrame from "./ResizableFrame";
 const TABS = [
   {
     text: "Preview",
-    icon: HiOutlineEye,
+    icon: BiShow,
   },
-  { text: "Code", icon: HiOutlineCode },
+  { text: "Code", icon: BiCode },
 ];
 
-const Presentation = () => {
+const Presentation = ({ name, path }: PropsWithChildren<ComponentProps>) => {
   const [, setTabIndex] = React.useState(0);
-
-  const componentUrl = "templates/feedback/alerts/with-description";
+  const routerPath = `/components/${path.split(".")[0]}`;
   return (
     <Box id="Autentication" height="full">
       <Tabs
+        variant="unstyled"
         onChange={(index) => {
           setTabIndex(index);
         }}
@@ -52,10 +51,10 @@ const Presentation = () => {
           <Text
             color={useColorModeValue("gray.800", "gray.300")}
             fontSize="md"
-            fontWeight={600}
+            fontWeight={500}
             isTruncated
           >
-            Autentication
+            {name}
           </Text>
           <HStack spacing={4} color={useColorModeValue("gray.500", "gray.300")}>
             <Flex bg={useColorModeValue("gray.200", "gray.600")} rounded="lg">
@@ -75,7 +74,7 @@ const Presentation = () => {
                   }}
                 >
                   <Flex alignItems="center" justifyContent="center">
-                    <Icon w={4} h={4} mt="1px" as={tab.icon} mr={[0, 2]} />
+                    <Icon w={5} h={5} mt="1px" as={tab.icon} mr={[0, 2]} />
                     <Text
                       fontSize="sm"
                       fontWeight="medium"
@@ -87,12 +86,12 @@ const Presentation = () => {
                 </Tab>
               ))}
             </Flex>
-            <Link href={componentUrl} passHref>
+            <Link href={routerPath} passHref>
               <IconButton
                 as="a"
                 rounded="lg"
                 cursor="pointer"
-                icon={<HiOutlineArrowsExpand />}
+                icon={<Icon as={HiOutlineArrowsExpand} w={4} h={4} />}
                 size="md"
                 variant="ghost"
                 aria-label="Open in Fullscreen"
@@ -107,15 +106,15 @@ const Presentation = () => {
             <Box
               overflow="clip"
               rounded="md"
-              bg={useColorModeValue("gray.700", "gray.700")}
+              bg={useColorModeValue("gray.500", "gray.700")}
             >
               <Box w="full">
-                <ResizableFrame componentUrl={componentUrl} />
+                <ResizableFrame componentUrl={routerPath} />
               </Box>
             </Box>
           </TabPanel>
           <TabPanel p={0}>
-            <CodeBlock componentUrl={componentUrl} />
+            <CodeBlock path={path} />
           </TabPanel>
         </TabPanels>
       </Tabs>

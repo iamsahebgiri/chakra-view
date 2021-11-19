@@ -7,11 +7,11 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import { nightOwl } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 
 type Props = {
-  componentUrl: string;
+  path: string;
 };
 
-const CodeBlock = ({ componentUrl }: Props) => {
-  const code = require(`!!raw-loader!/src/pages/${componentUrl}.tsx`).default;
+const CodeBlock = ({ path }: Props) => {
+  const code = require(`!!raw-loader!/src/pages/components/${path}`).default;
   const { hasCopied, onCopy } = useClipboard(code);
   const codeRef = useRef(null);
 
@@ -21,7 +21,7 @@ const CodeBlock = ({ componentUrl }: Props) => {
         {hasCopied ? "Copied" : "Copy"}
       </Button>
 
-      <Box rounded="md" overflow="clip">
+      <Box rounded="md" overflow="clip" bg="#011627" p="3">
         <SyntaxHighlighter
           language="javascript"
           style={nightOwl}
