@@ -1,6 +1,6 @@
-import { DeepPartial, Theme } from "@chakra-ui/react";
+import { SystemStyleObject } from "@chakra-ui/theme-tools";
 
-const Button: DeepPartial<Theme["components"]["Button"]> = {
+const Button: SystemStyleObject = {
   baseStyle: {
     _focus: { boxShadow: "0 0 0 2px #fb923c" },
   },
